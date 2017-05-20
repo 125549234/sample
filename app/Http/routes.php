@@ -16,3 +16,5 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 get('signup','UserController@create')->name('signup');
 //post('upload',array('UploadController@upw'))->name('upload');
 Route::post('upload','UploadController@upw')->name('upload');
+
+resource('users','UserController');
