@@ -18,3 +18,8 @@ get('signup','UserController@create')->name('signup');
 Route::post('upload','UploadController@upw')->name('upload');
 
 resource('users','UserController');
+
+
+get('login','SessionController@create')->name('login');
+post('login','SessionController@store')->name('login');
+delete('logout','SessionController@delete')->name('logout');
